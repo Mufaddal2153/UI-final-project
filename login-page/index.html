@@ -1,103 +1,155 @@
 <!DOCTYPE html>
 <html>
-  <title>Sign Up Form</title>
-  <link rel="stylesheet" href="style.css" />
-  <body>
-    <img class="background" src="background.jpg" />
+<title>Sign Up Form</title>
+<link rel='stylesheet' href="style.css">
+<body>
+
+    <img class="background" src="background">
     <div class="main-container">
-      <div class="top-bar">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#news">Courses</a></li>
-          <li><a href="#contact">Class Schedule</a></li>
-          <li><a href="#about">My account</a></li>
-        </ul>
-      </div>
-      <div class="login-form">
-        <div id="sign-in" class="sign-in">
-          <h1>Sign in</h1>
-          <div class="input-field">
-            <input id="username" type="text" placeholder="Username" />
-          </div>
-          <div id="error_user" class="error_user"></div>
-          <br />
-          <div class="input-field">
-            <input id="password" type="password" placeholder="Password" />
-            <p class="forgot"><a>Forgot Password?</a></p>
-          </div>
-          <div id="error" class="error"></div>
-          <br />
-          <div class="input-field">
-            <input type="button" value="Login" onclick="validate()" />
-          </div>
-          <br />
-          <div class="member">
-            Not a member? <a onclick="transit()">Sign Up</a>
-          </div>
+        
+        <div class="top-bar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">Courses</a></li>
+                <li><a href="#contact">Class Schedule</a></li>
+                <li><a href="#about">My account</a></li>
+            </ul>
         </div>
-
-        <div id="cover" class="cover"></div>
-      </div>
+        <div class="login-form">
+            
+            <div id="sign-in" class="sign-in">
+                    <h1>Sign in</h1>
+                    <div class="input-field">
+                        <input id="username" type="text" placeholder="Username">
+                    </div>
+                    <div id="error_user" class="error_user"></div>
+                    <br>
+                    <div class="input-field">
+                        <input id="password" type="password" placeholder="Password">
+                        <p class="forgot"><a>Forgot Password?</a></p>
+                    </div>
+                    <div id="error" class="error"></div>
+                    <br>
+                    <div class="input-field">
+                        <input type="button" value="Login" onclick="validate()">
+                    </div>
+                    <br>
+                <div class="member">Not a member? <a onclick="transit()">Sign Up</a></div>
+            </div>
+            
+            <div id="cover" class="cover">
+                <div class="board"><h3>GENERATE ONLINE FEES CHALLAN</h3><p>For creating Payment Challan Click Here. For Re-printing Payment Challan Click Here</p></div>
+                <div class="board"><h3>ADMIT CARD VERIFICATION</h3><p>The exam dept. will be verifying the final exams admit cards of all registered students from Wednesday 10th  till Sat, 20th  May 2023, after which a certain late fee will be charged for the same. For details  Download Notice.
+</p></div>
+            </div>
+            
+        </div>
+    
     </div>
-  </body>
-</html>
+    
+</body>
+</html> 
 <script type="application/javascript">
-  function transit() {
-    var sign_up = document.getElementById("sign-up");
-    var sign_in = document.getElementById("sign-in");
-    var cover_ = document.getElementById("cover");
-    cover_.classList.toggle("cover2");
-    sign_in.classList.toggle("transitbro");
-    sign_up.classList.toggle("transitbro2");
-  }
-
-  function transit1() {
-    var sign_up = document.getElementById("sign-up");
-    var sign_in = document.getElementById("sign-in");
-    var cover_ = document.getElementById("cover");
-    cover_.classList.toggle("cover2");
-    sign_in.classList.toggle("transitbro");
-    sign_up.classList.toggle("transitbro2");
-  }
-
-  function validate() {
-    error.innerHTML = "";
-    error_user.innerHTML = "";
-    var password = document.getElementById("password");
-    var username = document.getElementById("username");
-    username.style.borderColor = "black";
-    password.style.borderColor = "black";
-    if (username.value.trim() == "") {
-      username.style.borderColor = "#ff4c4c";
-
-      // Add a class that defines an animation
-      username.classList.add("error");
-      //            error_user.innerHTML += "<p>*Username field is empty</p>";
-
-      // remove the class after the animation completes
-      setTimeout(function () {
-        username.classList.remove("error");
-      }, 300);
-    } else {
-      username.style.backgroundColor = null;
+    
+        
+    function transit(){
+        var sign_up = document.getElementById("sign-up");
+        var sign_in = document.getElementById("sign-in");
+        var cover_ = document.getElementById("cover");
+        cover_.classList.toggle("cover2");
+        sign_in.classList.toggle('transitbro');
+        sign_up.classList.toggle('transitbro2');
     }
-    if (password.value.trim() == "") {
-      password.style.borderColor = "#ff4c4c";
-
-      // Add a class that defines an animation
-      password.classList.add("error");
-      //            error.innerHTML += "<p>*Password field is empty</p>";
-
-      // remove the class after the animation completes
-      setTimeout(function () {
-        password.classList.remove("error");
-      }, 300);
-    } else {
-      password.style.borderColor = null;
+    
+    function transit1(){
+        var sign_up = document.getElementById("sign-up");
+        var sign_in = document.getElementById("sign-in"); 
+        var cover_ = document.getElementById("cover");
+        cover_.classList.toggle("cover2");
+        sign_in.classList.toggle('transitbro');
+        sign_up.classList.toggle('transitbro2');
     }
+    
+    function validate() {
+        error.innerHTML = "";
+        error_user.innerHTML = "";
+        var password = document.getElementById('password');
+        var username = document.getElementById('username');
+        username.style.borderColor = 'black';
+        password.style.borderColor = 'black';
+        if (username.value.trim() == '') {
+            username.style.borderColor = '#ff4c4c';
 
-    if (username.value !== "admin" || password.value !== "admin")
-      return alert("Invalid username or password!");
-    window.location.replace("/home-page");
-  }
+            // Add a class that defines an animation
+            username.classList.add('error');
+//            error_user.innerHTML += "<p>*Username field is empty</p>";
+          
+            // remove the class after the animation completes
+            setTimeout(function() {
+                username.classList.remove('error');
+            }, 300);
+          
+        } else {
+            username.style.backgroundColor = null;
+        }
+        if (password.value.trim() == '') {
+            password.style.borderColor = '#ff4c4c';
+            
+            // Add a class that defines an animation
+            password.classList.add('error');
+//            error.innerHTML += "<p>*Password field is empty</p>";
+          
+            // remove the class after the animation completes
+            setTimeout(function() {
+                password.classList.remove('error');
+            }, 300);
+          
+        } else {
+            password.style.borderColor = null;
+        }
+    }    
+//    function login(){
+//        error_user.innerHTML = "";
+//        var username_ = username;
+//        error.innerHTML = "";
+//        var password_ = password;
+//        
+////        = assignment
+////            == Comparator
+////                === Comparator operator 
+//        
+//        if(username_.value.trim()==""){
+//            username_.classList.add("error-style");
+//            error_user.innerHTML += "<p>*Username field is empty</p>";
+//        }else{
+//            username_.classList.remove("error-style");
+//        }
+//        if(password_.value.trim()==""){
+//            password_.classList.add("error-style");
+//            error.innerHTML += "<p>*Password field is empty</p>";
+//        }else{
+//            password_pattern_checker();
+//            password_.classList.remove("error-style");
+//        }
+//    }
+//    
+//    function password_pattern_checker(){
+//        if(!password.value.match("^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$")){
+//               
+//                error.innerHTML="<p>Password does not contain correct pattern</p><ol>	<li>At least one digit <code>[0-9]</code></li>	<li>At least one lowercase character <code>[a-z]</code></li>	<li>At least one uppercase character <code>[A-Z]</code></li><li>At least one special character <code>[*.!@#$%^&amp;(){}[]:;&lt;&gt;,.?/~_+-=|\]</code></li><li>At least 8 characters in length, but no more than 32.</li></ol>" + error.innerHTML;
+//        }
+//        
+//    }
+    
 </script>
+
+
+
+
+
+
+
+
+
+
+

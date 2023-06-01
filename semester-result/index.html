@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html>
-<title>Semester Result</title>
-<link rel='stylesheet' href="style.css">
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Semester Result</title>
+</head>
 <body>
-
+    
+    <img class="background" src="background.jpg">
     <div class="main-container">
-        
+    
         <div class="top-bar">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#news">Courses</a></li>
-                <li><a href="#contact">Class Schedule</a></li>
-                <li><a href="#about">My account</a></li>
-            </ul>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#news">Courses</a></li>
+                    <li><a href="#contact">Class Schedule</a></li>
+                    <li><a href="#about">My account</a></li>
+                </ul>
         </div>
+        
+        <div>
+            <span class="heading-container">
+                <div class="text" data-text="Semester">Semester Result</div>
+            </span>
+        </div>
+        
+        
         <div class="table-form">
-              <h3>Current GPA: 3.38</h3>
+              <h3>Current CGPA: 3.35</h3>
               <div class="choose-sem">
                 <label for="semester">Choose Semester</label>
                 <select name="semester" id="semester">
@@ -26,14 +37,13 @@
                 </select>
                 </div>
               <h3>Courses Enrolled in Current Semester:</h3>
-              <table class="enrollment-table">
+              <table class="enrollment-table styled-table">
                 <thead>
                   <tr>
                     <th>Course Number</th>
                     <th>Course Name</th>
                     <th>Credit Hours</th>
                     <th>GPA</th>
-                  </tr>
                 </thead>
                 <tbody>
                   <tr>
@@ -65,29 +75,14 @@
                     <td>Android Application Development</td>
                     <td>3</td>
                     <td>4</td>
-                  </tr>
-                  <!-- Additional enrollment table rows will be dynamically generated here -->
+                  </tr>                  <!-- Additional enrollment table rows will be dynamically generated here -->
                 </tbody>
               </table>
         </div>
-    </div>
+        <br>
+        <br>
+        <br>
+        </div>
     
 </body>
-</html> 
-<script type="application/javascript">
-    
-        
-
-    
-</script>
-
-
-
-
-
-
-
-
-
-
-
+</html>

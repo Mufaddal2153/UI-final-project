@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Previous Semester</title>
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Previous Semester</title>
 </head>
 <body>
-        
+    
+    <img class="background" src="background.jpg">
     <div class="main-container">
     
         <div class="top-bar">
@@ -19,145 +17,154 @@
                     <li><a href="#about">My account</a></li>
                 </ul>
         </div>
-        <div class="table-form">
-            <h3>Current Semester</h3>
-            <table class="enrollment-table">
-              <thead>
-                <tr>
-                  <th>Course Number</th>
-                  <th>Course Name</th>
-                  <th>Credit Hours</th>
-                  <th>With Class</th>
-                  <th>Files</th>
-                  <th>Outline</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>CSC1205</td>
-                  <td>Technical and Business Writing</td>
-                  <td>3</td>
-                  <td>BSC/BS B</td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                </tr>
-                  <tr>
-                  <td>CSC3205</td>
-                  <td>Computer Networks and Data Communications</td>
-                  <td>3</td>
-                  <td>BSC/BS B</td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                </tr>
-                   <tr>
-                  <td>CSC4101</td>
-                  <td>Artificial Intelligence</td>
-                  <td>3</td>
-                  <td>BSC/BS B</td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                </tr>
-                   <tr>
-                  <td>CSC4724</td>
-                  <td>User Interface Design</td>
-                  <td>3</td>
-                  <td>BSC/BS B</td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                </tr>
-                   <tr>
-                  <td>CSC4822</td>
-                  <td>Introduction to Computer Science</td>
-                  <td>3</td>
-                  <td>BSC/BS B</td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                </tr>
-                <tr>
-                  <td>CSC2101</td>
-                  <td>Communication and Presentation Skills</td>
-                  <td>3</td>
-                  <td>BSC/BS B</td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                </tr>
-                <tr>
-                  <td>CSC2010</td>
-                  <td>Digital Logic Design</td>
-                  <td>3</td>
-                  <td>BSC/BS B</td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                </tr>
-                <tr>
-                  <td>CSC2105</td>
-                  <td>Statistics and Probability</td>
-                  <td>3</td>
-                  <td>BSC/BS B</td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                </tr>
-                <tr>
-                  <td>CSC1208</td>
-                  <td>Object Oriented Programming Techniques</td>
-                  <td>3</td>
-                  <td>BSC/BS B</td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                </tr>
-                <tr>
-                  <td>CSC4802</td>
-                  <td>Android Application Development</td>
-                  <td>3</td>
-                  <td>BSC/BS B</td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                </tr>
-                <tr>
-                  <td>CSC4606</td>
-                  <td>Psychology</td>
-                  <td>3</td>
-                  <td>BSC/BS B</td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                </tr>
-                <tr>
-                  <td>CSC1201</td>
-                  <td>Discrete Mathematical Structures</td>
-                  <td>3</td>
-                  <td>BSC/BS B</td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                </tr>
-                <tr>
-                  <td>CSC2110</td>
-                  <td>Data Structures and Algorithms</td>
-                  <td>3</td>
-                  <td>BSC/BS B</td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                </tr>
-                <tr>
-                  <td>CSC4102</td>
-                  <td>Professional Practices</td>
-                  <td>3</td>
-                  <td>BSC/BS B</td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                </tr>
-                <tr>
-                  <td>CSCS2112</td>
-                  <td>Differential Equations</td>
-                  <td>3</td>
-                  <td>BSC/BS B</td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                </tr>
-                <!-- Additional enrollment table rows will be dynamically generated here -->
-              </tbody>
-            </table>
-      </div>
+        
+        <div>
+            <span class="heading-container">
+                <div class="text" data-text="Previous">Previous Semester</div>
+            </span>
         </div>
-
+        
+        
+        <div class="table-form">
+              <table class="withdrawal-table styled-table">
+                <thead>
+                  <tr>
+                    <th>Course Number</th>
+                    <th>Course Name</th>
+                    <th>Credit Hours</th>
+                    <th>With Class</th>
+                    <th>Files</th>
+                    <th>Outline</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>CSC1205</td>
+                    <td>Technical and Business Writing</td>
+                    <td>3</td>
+                    <td>BSC/BS B</td>
+                    <td><a href="#">Files</a></td>
+                    <td><a href="#">Outlines</a></td>
+                  </tr>
+                    <tr>
+                    <td>CSC3205</td>
+                    <td>Computer Networks and Data Communications</td>
+                    <td>3</td>
+                    <td>BSC/BS B</td>
+                    <td><a href="#">Files</a></td>
+                    <td><a href="#">Outlines</a></td>
+                  </tr>
+                     <tr>
+                    <td>CSC4101</td>
+                    <td>Artificial Intelligence</td>
+                    <td>3</td>
+                    <td>BSC/BS B</td>
+                    <td><a href="#">Files</a></td>
+                    <td><a href="#">Outlines</a></td>
+                  </tr>
+                     <tr>
+                    <td>CSC4724</td>
+                    <td>User Interface Design</td>
+                    <td>3</td>
+                    <td>BSC/BS B</td>
+                    <td><a href="#">Files</a></td>
+                    <td><a href="#">Outlines</a></td>
+                  </tr>
+                     <tr>
+                    <td>CSC4822</td>
+                    <td>Introduction to Computer Science</td>
+                    <td>3</td>
+                    <td>BSC/BS B</td>
+                    <td><a href="#">Files</a></td>
+                    <td><a href="#">Outlines</a></td>
+                  </tr>
+                  <tr>
+                    <td>CSC2101</td>
+                    <td>Communication and Presentation Skills</td>
+                    <td>3</td>
+                    <td>BSC/BS B</td>
+                    <td><a href="#">Files</a></td>
+                    <td><a href="#">Outlines</a></td>
+                  </tr>
+                  <tr>
+                    <td>CSC2010</td>
+                    <td>Digital Logic Design</td>
+                    <td>3</td>
+                    <td>BSC/BS B</td>
+                    <td><a href="#">Files</a></td>
+                    <td><a href="#">Outlines</a></td>
+                  </tr>
+                  <tr>
+                    <td>CSC2105</td>
+                    <td>Statistics and Probability</td>
+                    <td>3</td>
+                    <td>BSC/BS B</td>
+                    <td><a href="#">Files</a></td>
+                    <td><a href="#">Outlines</a></td>
+                  </tr>
+                  <tr>
+                    <td>CSC1208</td>
+                    <td>Object Oriented Programming Techniques</td>
+                    <td>3</td>
+                    <td>BSC/BS B</td>
+                    <td><a href="#">Files</a></td>
+                    <td><a href="#">Outlines</a></td>
+                  </tr>
+                  <tr>
+                    <td>CSC4802</td>
+                    <td>Android Application Development</td>
+                    <td>3</td>
+                    <td>BSC/BS B</td>
+                    <td><a href="#">Files</a></td>
+                    <td><a href="#">Outlines</a></td>
+                  </tr>
+                  <tr>
+                    <td>CSC4606</td>
+                    <td>Psychology</td>
+                    <td>3</td>
+                    <td>BSC/BS B</td>
+                    <td><a href="#">Files</a></td>
+                    <td><a href="#">Outlines</a></td>
+                  </tr>
+                  <tr>
+                    <td>CSC1201</td>
+                    <td>Discrete Mathematical Structures</td>
+                    <td>3</td>
+                    <td>BSC/BS B</td>
+                    <td><a href="#">Files</a></td>
+                    <td><a href="#">Outlines</a></td>
+                  </tr>
+                  <tr>
+                    <td>CSC2110</td>
+                    <td>Data Structures and Algorithms</td>
+                    <td>3</td>
+                    <td>BSC/BS B</td>
+                    <td><a href="#">Files</a></td>
+                    <td><a href="#">Outlines</a></td>
+                  </tr>
+                  <tr>
+                    <td>CSC4102</td>
+                    <td>Professional Practices</td>
+                    <td>3</td>
+                    <td>BSC/BS B</td>
+                    <td><a href="#">Files</a></td>
+                    <td><a href="#">Outlines</a></td>
+                  </tr>
+                  <tr>
+                    <td>CSCS2112</td>
+                    <td>Differential Equations</td>
+                    <td>3</td>
+                    <td>BSC/BS B</td>
+                    <td><a href="#">Files</a></td>
+                    <td><a href="#">Outlines</a></td>
+                  </tr>
+  
+                  <!-- Withdrawal table rows will be dynamically generated here -->
+                </tbody>
+              </table>
+        <br>
+        <br>
+        <br>
+        </div>
+    
 </body>
 </html>

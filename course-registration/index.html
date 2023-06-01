@@ -1,162 +1,160 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script defer src="../scripts/course-registration.js"></script>
   <title>Course Registration</title>
-  <link rel="stylesheet" href="style.css" />
-
-  <script defer src="/scripts/course-registration.js"></script>
-
-  <body>
+</head>
+<body>
+    
+    <img class="background" src="background.jpg">
     <div class="main-container">
-      <div class="top-bar">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#news">Courses</a></li>
-          <li><a href="#contact">Class Schedule</a></li>
-          <li><a href="#about">My account</a></li>
-        </ul>
-      </div>
-
-      <div class="bar">
-        <div class="heading"><p>You Are Registered For This Courses</p></div>
-        <div class="recap-sheet">
-          <table id="recap_table" class="recap-table">
-            <thead>
-              <tr>
-                <th>S.No</th>
-                <th>Course Name</th>
-                <th>Faculty Name</th>
-                <th>Semester</th>
-                <th>With Class</th>
-                <th>De-Register</th>
-              </tr>
-            </thead>
-            <tbody id="recap_table_body">
-              <tr>
-                <td>1</td>
-                <td>CSC1101 Calculus and Analytical Geometry</td>
-                <td>Kiran Mansoor Velani</td>
-                <td>Fall 2022</td>
-                <td>BCS/BS 1 E</td>
-                <td><input type="checkbox" /></td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>CSC1101 Calculus and Analytical Geometry</td>
-                <td>Kiran Mansoor Velani</td>
-                <td>Fall 2022</td>
-                <td>BCS/BS 1 E</td>
-                <td><input type="checkbox" /></td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>CSC1101 Calculus and Analytical Geometry</td>
-                <td>Kiran Mansoor Velani</td>
-                <td>Fall 2022</td>
-                <td>BCS/BS 1 E</td>
-                <td><input type="checkbox" /></td>
-              </tr>
-              <!-- Additional recap table rows will be dynamically generated here -->
-            </tbody>
-          </table>
+    
+        <div class="top-bar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#news">Courses</a></li>
+                    <li><a href="#contact">Class Schedule</a></li>
+                    <li><a href="#about">My account</a></li>
+                </ul>
         </div>
-      </div>
-      <button
-        id="recap_btn"
-        style="display: block; margin: 1rem 4.5rem 1rem auto"
-      >
-        Submit
-      </button>
-      <div class="bar">
-        <div class="heading"><p>Courses Offers For Your Section</p></div>
-        <div class="course-sheet">
-          <table id="course_table" class="course-table">
-            <thead>
-              <tr>
-                <th>S.No</th>
-                <th>Course Name</th>
-                <th>Faculty Name</th>
-                <th>Semester</th>
-                <th>With Class</th>
-                <th>Register</th>
-              </tr>
-            </thead>
-            <tbody id="course_table_body">
-              <tr>
-                <td>1</td>
-                <td>CSC1101 Calculus and Analytical Geometry</td>
-                <td>Kiran Mansoor Velani</td>
-                <td>Fall 2022</td>
-                <td>BCS/BS 1 B</td>
-                <td><input type="checkbox" /></td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>CSC1101 Calculus and Analytical Geometry</td>
-                <td>Kiran Mansoor Velani</td>
-                <td>Fall 2022</td>
-                <td>BCS/BS 1 B</td>
-                <td><input type="checkbox" /></td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>CSC1101 Calculus and Analytical Geometry</td>
-                <td>Kiran Mansoor Velani</td>
-                <td>Fall 2022</td>
-                <td>BCS/BS 1 B</td>
-                <td><input type="checkbox" /></td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>CSC1101 Calculus and Analytical Geometry</td>
-                <td>Kiran Mansoor Velani</td>
-                <td>Fall 2022</td>
-                <td>BCS/BS 1 B</td>
-                <td><input type="checkbox" /></td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>CSC1101 Calculus and Analytical Geometry</td>
-                <td>Kiran Mansoor Velani</td>
-                <td>Fall 2022</td>
-                <td>BCS/BS 1 B</td>
-                <td><input type="checkbox" /></td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>CSC1101 Calculus and Analytical Geometry</td>
-                <td>Kiran Mansoor Velani</td>
-                <td>Fall 2022</td>
-                <td>BCS/BS 1 B</td>
-                <td><input type="checkbox" /></td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>CSC1101 Calculus and Analytical Geometry</td>
-                <td>Kiran Mansoor Velani</td>
-                <td>Fall 2022</td>
-                <td>BCS/BS 1 B</td>
-                <td><input type="checkbox" /></td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>CSC1101 Calculus and Analytical Geometry</td>
-                <td>Kiran Mansoor Velani</td>
-                <td>Fall 2022</td>
-                <td>BCS/BS 1 B</td>
-                <td><input type="checkbox" /></td>
-              </tr>
-              <!-- Additional recap table rows will be dynamically generated here -->
-            </tbody>
-          </table>
+        
+        <div>
+            <span class="heading-container">
+                <div class="text" data-text="Course">Course Registration</div>
+            </span>
         </div>
-      </div>
-      <button
-        id="course_btn"
-        style="display: block; margin: 1rem 4.5rem 1rem auto"
-      >
-        Submit
-      </button>
-    </div>
-  </body>
+        
+        
+        <div class="table-form">
+              <h3>You Are Registered For This Courses</h3>
+              <table class="withdrawal-table styled-table" id="recap_table">
+                <thead>
+                  <tr>
+                      <th>S.No</th>
+                      <th>Course Name</th>
+                      <th>Faculty Name</th>
+                      <th>Semester</th>
+                      <th>With Class</th>
+                      <th>De-Register</th>
+                  </tr>
+                </thead>
+                <tbody id="recap_table_body">
+                    <tr>
+                      <td>1</td>
+                      <td>CSC1101 Calculus and Analytical Geometry</td>
+                      <td>Kiran Mansoor Velani</td>
+                      <td>Fall 2022</td>
+                      <td>BCS/BS 1 E</td>
+                      <td><input type="checkbox"></td>
+                    </tr>
+                      <tr>
+                      <td>1</td>
+                      <td>CSC1101 Calculus and Analytical Geometry</td>
+                      <td>Kiran Mansoor Velani</td>
+                      <td>Fall 2022</td>
+                      <td>BCS/BS 1 E</td>
+                      <td><input type="checkbox"></td>
+                    </tr>
+                      <tr>
+                      <td>1</td>
+                      <td>CSC1101 Calculus and Analytical Geometry</td>
+                      <td>Kiran Mansoor Velani</td>
+                      <td>Fall 2022</td>
+                      <td>BCS/BS 1 E</td>
+                      <td><input type="checkbox"></td>
+                    </tr>
+                  <!-- Withdrawal table rows will be dynamically generated here -->
+                </tbody>
+              </table>
+              <input type="button" id="recap_btn" style="display: block; margin: 1rem 4.5rem 1rem auto" value="Submit">
+              <h3>Courses Offers To Other Section</h3>
+              <table class="enrollment-table styled-table" id="course_table">
+                <thead>
+                  <tr>
+                          <th>S.No</th>
+                          <th>Course Name</th>
+                          <th>Faculty Name</th>
+                          <th>Semester</th>
+                          <th>With Class</th>
+                          <th>Register</th>
+                  </tr>
+                </thead>
+                <tbody id="course_table_body">
+                  <tr>
+                        <tr>
+                          <td>1</td>
+                          <td>CSC1101 Calculus and Analytical Geometry</td>
+                          <td>Kiran Mansoor Velani</td>
+                          <td>Fall 2022</td>
+                          <td>BCS/BS 1 B</td>
+                          <td><input type="checkbox"></td>
+                        </tr>
+                          <tr>
+                          <td>1</td>
+                          <td>CSC1101 Calculus and Analytical Geometry</td>
+                          <td>Kiran Mansoor Velani</td>
+                          <td>Fall 2022</td>
+                          <td>BCS/BS 1 B</td>
+                          <td><input type="checkbox"></td>
+                        </tr>
+                          <tr>
+                          <td>1</td>
+                          <td>CSC1101 Calculus and Analytical Geometry</td>
+                          <td>Kiran Mansoor Velani</td>
+                          <td>Fall 2022</td>
+                          <td>BCS/BS 1 B</td>
+                          <td><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>CSC1101 Calculus and Analytical Geometry</td>
+                            <td>Kiran Mansoor Velani</td>
+                            <td>Fall 2022</td>
+                            <td>BCS/BS 1 B</td>
+                            <td><input type="checkbox"></td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>CSC1101 Calculus and Analytical Geometry</td>
+                            <td>Kiran Mansoor Velani</td>
+                            <td>Fall 2022</td>
+                            <td>BCS/BS 1 B</td>
+                            <td><input type="checkbox"></td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>CSC1101 Calculus and Analytical Geometry</td>
+                            <td>Kiran Mansoor Velani</td>
+                            <td>Fall 2022</td>
+                            <td>BCS/BS 1 B</td>
+                            <td><input type="checkbox"></td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>CSC1101 Calculus and Analytical Geometry</td>
+                            <td>Kiran Mansoor Velani</td>
+                            <td>Fall 2022</td>
+                            <td>BCS/BS 1 B</td>
+                            <td><input type="checkbox"></td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>CSC1101 Calculus and Analytical Geometry</td>
+                            <td>Kiran Mansoor Velani</td>
+                            <td>Fall 2022</td>
+                            <td>BCS/BS 1 B</td>
+                            <td><input type="checkbox"></td>
+                          </tr>
+                  <!-- Additional enrollment table rows will be dynamically generated here -->
+                </tbody>
+              </table>
+              <input type="button" id="course_btn" style="display: block; margin: 1rem 4.5rem 1rem auto" value="Submit">
+        </div>
+        <br>
+        <br>
+        <br>
+        </div>
+    
+</body>
 </html>
-<script type="application/javascript"></script>

@@ -13,6 +13,7 @@ body{
 }
 
 .background{
+    filter: blur(2px);
     height: 100%;
     width: 100%;
 background-position: center;
@@ -21,12 +22,13 @@ background-position: center;
 }
 
 .top-bar{
+    box-shadow:0 1px 2px rgba(0,0,0,0.07),0 2px 4px rgba(0,0,0,0.07),0 4px 8px rgba(0,0,0,0.07),0 8px 16px rgba(0,0,0,0.07),0 16px 32px rgba(0,0,0,0.07),0 32px 64px rgba(0,0,0,0.07);
     position: absolute;
     top: 5%;
     margin-left: 5%;
     width: 90%;
     height: 47px;
-    background: purple;
+    background: #001f3f;
     border-radius: 10px;
 }
 
@@ -71,6 +73,7 @@ height: 100%;
 }
 
 .sign-in{
+    box-shadow:0 1px 2px rgba(0,0,0,0.07),0 2px 4px rgba(0,0,0,0.07),0 4px 8px rgba(0,0,0,0.07),0 8px 16px rgba(0,0,0,0.07),0 16px 32px rgba(0,0,0,0.07),0 32px 64px rgba(0,0,0,0.07);
     width:30%;
     height: 100%;
     border-top-left-radius: 10px;
@@ -78,16 +81,19 @@ height: 100%;
     text-align: center;
     padding-top: 4%;
     transition: all 0.5s;
-    background: white;
+    background: #caf0f8;
 }
 
 .cover{
+    justify-content: center;
+    display: flex;
+    box-shadow:0 1px 2px rgba(0,0,0,0.07),0 2px 4px rgba(0,0,0,0.07),0 4px 8px rgba(0,0,0,0.07),0 8px 16px rgba(0,0,0,0.07),0 16px 32px rgba(0,0,0,0.07),0 32px 64px rgba(0,0,0,0.07);
     width:70%;
     height: 100%;
     border-radius: 0;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    background: purple;
+    background: #0077b6;
     transition: 0.5s;
     
 }
@@ -163,3 +169,14 @@ a:hover{
     cursor: pointer;
 }
 
+.board{
+    text-align: center;
+    width: 35%;
+    height: 40%;
+    margin-left: 5%;
+    margin-top: 5%;
+    position: relative;
+    border: 1px solid black;
+    transform:  rotate(-2deg);
+    background: lightgreen;
+}
