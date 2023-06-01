@@ -1,0 +1,118 @@
+body{
+    margin:0;
+}
+
+*{
+    box-sizing:border-box;
+    font-family: 'segoe UI'
+}
+
+.main-container{
+    width:100vw;
+    height: 100vh;
+}
+
+
+.top-bar{
+    position: absolute;
+    top: 5%;
+    margin-left: 5%;
+    width: 90%;
+    height: 47px;
+    background: purple;
+    border-radius: 10px;
+}
+
+.top-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.top-bar li {
+  float: left;
+}
+
+.top-bar li:nth-last-child(1){
+    float: right;
+}
+
+.top-bar li a {
+  display:flex;
+  color: white;
+  text-align: center;
+  padding: 13px;
+  text-decoration: none;
+}
+
+.top-bar li a:hover {
+height: 100%;
+    border-radius: 10px;
+  background-color: #111111;
+}
+.cover{
+    box-shadow:0 1px 2px rgba(0,0,0,0.07),0 2px 4px rgba(0,0,0,0.07),0 4px 8px rgba(0,0,0,0.07),0 8px 16px rgba(0,0,0,0.07),0 16px 32px rgba(0,0,0,0.07),0 32px 64px rgba(0,0,0,0.07);
+    background: silver;
+    display: flex;
+    margin-left: 5%;
+    position: absolute;
+    border: 1px solid silver;
+    margin-top: 10%;
+    width: 90%;
+    height: 70%;
+    border-radius: 10px;
+}
+
+.con{
+    padding-top: 1%;
+    width: 50%;
+    padding-left: 12%;
+}
+
+.con p:nth-child(1){
+    font-family: raleway;
+    font-size: 2.5em;
+}
+.con p:nth-child(2){
+    font-family: dosis;
+    font-size: 1.3em;
+}
+
+.con li{
+    font-family: dosis;
+    font-size: 1.2em;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+.con1{
+    padding-top: 3%;
+    padding-left: 5%;
+    width: 50%;
+}
+
+label {
+    font-family: dosis;
+    font-size: 1.2em;
+  display: inline-block;
+  width: 200px;
+}
+
+input, select {
+  width: 200px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"], input[type="reset"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+  background-color: #45a049;
+}

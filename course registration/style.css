@@ -1,0 +1,120 @@
+body{
+    margin:0;
+}
+
+*{
+    box-sizing:border-box;
+    font-family: 'segoe UI'
+}
+
+.main-container{
+    width:100vw;
+    height: 100vh;
+}
+
+.background{
+  background-size: cover;
+}
+
+.top-bar{
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-bottom: 15px;
+    width: 90%;
+    height: 47px;
+    background: purple;
+    border-radius: 10px;
+}
+
+.bar{
+    position: relative;
+    margin-top: 20px;
+    margin-left: 5%;
+    width: 90%;
+    height: 35%;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid grey;
+    overflow: auto;
+}
+
+.heading{
+    display: flex;
+    height: 20%;
+    width: 100%;
+    background: grey;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    align-items:center;
+    justify-content:flex-start;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+.top-bar li:nth-last-child(1){
+    float: right;
+}
+
+li a {
+  display:flex;
+  color: white;
+  text-align: center;
+  padding: 13px;
+  text-decoration: none;
+}
+
+li a:hover {
+height: 100%;
+    border-radius: 10px;
+  background-color: #111111;
+}
+
+p{
+    margin: 0;
+    margin-left: 10px;
+    font-weight: 500;
+}
+.course-sheet{
+  position: relative;
+  margin-top: 0%;
+  width: 100%;
+  margin-left: 0%;
+}
+
+h2 {
+text-align: center;
+}
+
+table {
+width: 100%;
+margin-bottom: 20px;
+border-collapse: collapse;
+}
+
+th, td {
+padding: 8px;
+text-align: left;
+border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+background-color: silver;
+}
+
+a {
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
