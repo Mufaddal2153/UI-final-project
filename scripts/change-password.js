@@ -15,6 +15,13 @@ function validateNewPassword(oldInputValue, newInputValue, retypeInputValue) {
   else if (!isValid) return alert("Please enter a valid password!");
   else if (newInputValue !== retypeInputValue)
     return alert("Password does not match!");
+  else {
+    alert("Password change successfully!");
+    oldInputPassword.value = "";
+    newInputPassword.value = "";
+    retypeNewInputPassword.value = "";
+    answer.value = "";
+  }
 }
 
 function onSubmit(event) {
@@ -23,8 +30,6 @@ function onSubmit(event) {
   const retypeInputValue = retypeNewInputPassword.value;
 
   validateNewPassword(oldInputValue, newInputValue, retypeInputValue);
-
-  alert("Password change successfully!");
 }
 
 submitBtn.addEventListener("click", () => {

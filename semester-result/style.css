@@ -24,6 +24,7 @@ body{
 }
 
 .top-bar{
+    box-shadow:0 1px 2px rgba(0,0,0,0.07),0 2px 4px rgba(0,0,0,0.07),0 4px 8px rgba(0,0,0,0.07),0 8px 16px rgba(0,0,0,0.07),0 16px 32px rgba(0,0,0,0.07),0 32px 64px rgba(0,0,0,0.07);
     position: absolute;
     top: 5%;
     margin-left: 5%;
@@ -33,22 +34,22 @@ body{
     border-radius: 10px;
 }
 
-ul {
+.top-bar-ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 
-li {
+.top-bar-li {
   float: left;
 }
 
-.top-bar li:nth-last-child(1){
+.top-bar-li:nth-last-child(1){
     float: right;
 }
 
-li a {
+.top-bar-li a {
   display:flex;
   color: white;
   text-align: center;
@@ -56,10 +57,54 @@ li a {
   text-decoration: none;
 }
 
-li a:hover {
-height: 100%;
+.top-bar-li a:hover{
+    height: 100%;
     border-radius: 10px;
-  background-color: #111111;
+    background-color: #111111;
+}
+
+.drop1:hover .drop {
+    display:block;
+}
+
+.drop2:hover .drop {
+    width: 20%;
+    display:block;
+    margin-left: -11%;
+    height: 450%;
+}
+
+.drop3:hover .drop {
+    width: 20%;
+    display:block;
+    height: 450%;
+}
+
+.drop{
+    display: none;
+    padding-top: 15px;
+    position: absolute;
+    background: #2565ae;
+    width: 20%;
+    height: 400%;
+    z-index: 1;
+    border-radius: 5px;
+    color: aliceblue;
+}
+
+.drop ul{
+    list-style: none;
+}
+.drop li{
+    margin: 0;
+    margin-left: -10%;
+}
+
+.drop li a:hover{
+    height: 100%;
+    border-radius: 10px;
+    margin-left: -8%;
+    background-color: #111111;
 }
 
 .heading-container{
